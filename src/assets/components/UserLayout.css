@@ -1,0 +1,69 @@
+/* Container tổng */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  color: black;
+}
+
+/* Header */
+header .head {
+  background: #d3d3d3;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Navbar */
+header .navbar {
+  background: #a9a9a9;
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+
+/* Content layout */
+.content {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  flex: 1;
+}
+
+/* Menu (aside bên trái) */
+.content aside:first-child {
+  background: green;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Article (aside bên phải) */
+.content aside:last-child {
+  background: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Main content (giữa) */
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 20px;
+  background: #fdf5f5;
+}
+
+/* Cart */
+.cart {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
